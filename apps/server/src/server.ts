@@ -8,15 +8,7 @@ import { serverDb } from './db/database';
 
 export async function buildServer() {
   const server = Fastify({
-    logger: {
-      transport: {
-        target: 'pino-pretty',
-        options: {
-          translateTime: 'HH:MM:ss Z',
-          ignore: 'pid,hostname',
-        },
-      },
-    },
+    logger: true,
   });
 
   await server.register(cors, {
