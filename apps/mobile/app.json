@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Blackout",
+    "slug": "blackout-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0d14"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.blackout.incidentmesh",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Required to geotag emergency disaster reports.",
+        "NSBluetoothAlwaysUsageDescription": "Required for zero-internet peer-to-peer mesh synchronization."
+      }
+    },
+    "android": {
+      "package": "com.blackout.incidentmesh",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_SCAN",
+        "BLUETOOTH_CONNECT",
+        "BLUETOOTH_ADVERTISE"
+      ]
+    }
+  }
+}

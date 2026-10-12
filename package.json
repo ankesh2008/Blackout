@@ -1,0 +1,28 @@
+{
+  "name": "blackout",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@12.11.2",
+  "description": "Offline-First, P2P Mesh Emergency Reporting & Incident Response Platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@blackout/mobile",
+  "version": "0.1.0",
+  "private": true,
+  "main": "App.tsx",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@blackout/types": "workspace:*",
+    "@blackout/protocol": "workspace:*",
+    "@blackout/sync": "workspace:*",
+    "@blackout/db": "workspace:*",
+    "@blackout/mesh": "workspace:*",
+    "expo": "~52.0.0",
+    "expo-status-bar": "~2.0.0",
+    "react": "18.3.1",
+    "react-native": "0.76.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@types/react": "^18.3.18",
+    "@types/react-native": "^0.73.0",
+    "typescript": "^5.7.3"
+  }
+}
